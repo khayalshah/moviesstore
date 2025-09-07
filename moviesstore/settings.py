@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--#2a@x2s3(s2fjcuh$!qvn546a6prrg#%_ulvjfs@%l3+tot4^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['khayalshah.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -80,8 +80,8 @@ WSGI_APPLICATION = 'moviesstore.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'moviesstore',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',
