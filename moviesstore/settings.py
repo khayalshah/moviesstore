@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': 'moviesstore',
         'USER': 'root',
         'PASSWORD': '',
-        'HOST': 'localhost',
+        'HOST': 'khayalshah.mysql.pythonanywhere-services.com',
         'PORT': '3306',
     }
 }
