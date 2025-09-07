@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--#2a@x2s3(s2fjcuh$!qvn546a6prrg#%_ulvjfs@%l3+tot4^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['khayalshah.pythonanywhere.com']
 
 
 # Application definition
@@ -82,8 +82,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'moviesstore',
-        'USER': 'root',
-        'PASSWORD': '',
+        'USER': 'khayalshah',
+        'PASSWORD': 'khwaahishshah',
         'HOST': 'khayalshah.mysql.pythonanywhere-services.com',
         'PORT': '3306',
     }
