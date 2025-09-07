@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'moviesstore.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'moviesstore',
+        'NAME': 'khayalshah$moviesstore',
         'USER': 'khayalshah',
         'PASSWORD': 'khwaahishshah',
         'HOST': 'khayalshah.mysql.pythonanywhere-services.com',
