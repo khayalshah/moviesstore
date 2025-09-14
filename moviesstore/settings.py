@@ -82,26 +82,13 @@ WSGI_APPLICATION = 'moviesstore.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-USE_SQLITE = os.getenv("USE_SQLITE", "0") == "1"
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
+}
 
-if USE_SQLITE:
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": BASE_DIR / "db.sqlite3",
-        }
-    }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'khayalshah$moviesstore',
-            'USER': 'khayalshah',
-            'PASSWORD': 'khwaahishshah',
-            'HOST': 'khayalshah.mysql.pythonanywhere-services.com',
-            'PORT': '3306',
-        }
-    }
 
 
 # Password validation

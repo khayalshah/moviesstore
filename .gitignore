@@ -1,20 +1,9 @@
-# Python
 __pycache__/
-*.py[cod]
-*.egg-info/
+*.pyc
 *.pyo
-
-# Virtualenv
-.venv/
-venv/
-env/
-
-# Django dev artifacts
+*.pyd
 db.sqlite3
-media/
-staticfiles/
-
-# Editors, OS
-.vscode/
-.idea/
 .DS_Store
+.env
+.vscode/
+staticfiles/
